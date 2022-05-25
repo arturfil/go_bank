@@ -34,7 +34,7 @@ jobs:
         go-version: 1.18
 
     - name: Run migrations
-    run: make migrateup
+      run: make migrateup
 
     - name: Test
       run: make test

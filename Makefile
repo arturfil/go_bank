@@ -19,4 +19,7 @@ sqlc:
 test:
 	go test -v -cover ./...
 
-.PHONY: docker createdb dropdb migrateup migrateup sqlc test
+server: 
+	go run main.go
+
+.PHONY: docker createdb dropdb migrateup migrateup sqlc test server
